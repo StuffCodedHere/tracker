@@ -1,0 +1,23 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ user-select: none;
+}
+:root {
+ --background-color: #111;
+ --text-color: #aaa;
+
+ --text-size: clamp(20px, 4vw, 40px);
+}
+body {
+ height: 100svh;
+ background: var(--background-color);
+ color: var(--text-color);
+ font-size: var(--text-size);
+ font-family: monospace;
+
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
