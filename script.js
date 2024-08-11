@@ -9,6 +9,7 @@ let days = Math.floor((new Date() - initialDate) / 86400000)
 document.onclick = () => {
  doneCounter += 2
  localStorage.doneCounter = doneCounter
+ h1.innerHTML = days - localStorage.doneCounter
 }
 
 h1.innerHTML = days - localStorage.doneCounter
