@@ -13,3 +13,5 @@ document.onclick = () => {
 }
 
 h1.innerHTML = days - doneCounter
+
+localStorage.removeItem("doneCounter")
