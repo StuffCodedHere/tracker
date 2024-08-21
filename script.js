@@ -5,7 +5,7 @@ const MILISECONDS_TO_DAYS_DEVIDER = 86400000
 
 if (!localStorage.doneCounter) localStorage.setItem("doneCounter", 0)
 let doneCounter = parseInt(localStorage.doneCounter)
-let days = Math.floor((new Date() - initialDate) / MILISECONDS_TO_DAYS_DEVIDER)
+let days = Math.floor((new Date() - INITIAL_DATE) / MILISECONDS_TO_DAYS_DEVIDER)
 
 document.onclick = () => {
  doneCounter += 2
