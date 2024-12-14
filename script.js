@@ -7,7 +7,7 @@ if (!localStorage.doneCounter) localStorage.setItem("doneCounter", 0)
 let doneCounter = parseInt(localStorage.doneCounter)
 let days = Math.floor((new Date() - INITIAL_DATE) / MILISECONDS_TO_DAYS_DEVIDER)
 
-document.onclick = () => {
+document.querySelector("div").onclick = () => {
  doneCounter += 2
  localStorage.doneCounter = doneCounter
  ELEMENT.innerHTML = days - doneCounter
