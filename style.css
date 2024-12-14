@@ -11,6 +11,7 @@
  --text-size: clamp(20px, 4vw, 40px);
 }
 body {
+ width: 100vw;
  height: 100svh;
  background: var(--background-color);
  color: var(--text-color);
